@@ -4,16 +4,20 @@
     box-sizing: border-box;
 }
 :root{
-    --crisp: #f9f9f9;
-    --corn-blue: #4f76f6;
-    --charcoal: #1f2b37;
+    --primary-color: #f9f9f9;
+    --auxilary-color: #4f76f6;
+    --secondary-color: #1f2b37;
+}
+.dark-mode{
+    --secondary-color: #f9f9f9;
+    --primary-color: #1f2b37;
 }
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: var(--charcoal);
+    background: var(--primary-color);
     position: relative;
 }
 .logo{
@@ -22,23 +26,30 @@ body{
     left: 2%;
     width: 110px;
 }
+#icon{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    width: 25px;
+}
 .hero{
     position: absolute;
     top: 38%;
     font-size: 60px;
-    color: var(--crisp);
+    color: var(--secondary-color);
 }
 .hero span{
-    color: var(--corn-blue);
+    color: var(--auxilary-color);
 }
 .rotating-text{
     font-family: sans-serif;
     font-weight: 600;
     font-size: 40px;
-    color: var(--crisp);
+    color: var(--secondary-color);
     transform: translateX(-50%);
     position: absolute;
     top: 53%;
+    left: 30%;
 }
 
 .rotating-text p{
@@ -51,7 +62,7 @@ body{
     position: absolute;
     display: flex;
     opacity: 0;
-    color: var(--corn-blue);
+    color: var(--auxilary-color);
 }
 
 .rotating-text p .word .letter{
