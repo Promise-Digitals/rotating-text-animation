@@ -21,7 +21,7 @@ words[currentWordIndex].style.opacity = "1";
 let rotateText = () => {
     let currentWord = words[currentWordIndex];
     let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
-    
+
     // rotate out letters of current word
     Array.from(currentWord.children).forEach((letter, i) => {
         setTimeout(() => {
@@ -41,4 +41,4 @@ let rotateText = () => {
 };
 
 rotateText();
-setInterval(rotateText, 4000)
+setInterval(rotateText, 5000)
