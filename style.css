@@ -14,11 +14,17 @@ body{
     align-items: center;
     height: 100vh;
     background: var(--charcoal);
+    position: relative;
+}
+.logo{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 110px;
 }
 .hero{
     position: absolute;
-    top: 35%;
-    /* transform: translateY(-50%); */
+    top: 38%;
     font-size: 60px;
     color: var(--crisp);
 }
@@ -32,7 +38,7 @@ body{
     color: var(--crisp);
     transform: translateX(-50%);
     position: absolute;
-    top: 52%;
+    top: 53%;
 }
 
 .rotating-text p{
